@@ -10,6 +10,7 @@ public:
         vector<TreeNode*> left = buildTrees(l, i-1);
         vector<TreeNode*> right = buildTrees(i+1, r);
 
+        for(int j=0; j<left.size(); j++)
         {
           for(int k=0; k<right.size(); k++)
           {
